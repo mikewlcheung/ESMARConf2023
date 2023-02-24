@@ -2245,8 +2245,8 @@ summary(fit1)</code></pre>
 ## AIC:      -352.6125              -96.61254                -96.54374
 ## BIC:     -1145.3201               33.10325                -24.09810
 ## To get additional fit indices, see help(mxRefModels)
-## timestamp: 2023-02-24 08:45:53 
-## Wall clock time: 0.2019999 secs 
+## timestamp: 2023-02-24 19:24:55 
+## Wall clock time: 0.206718 secs 
 ## optimizer:  SLSQP 
 ## OpenMx version number: 2.20.7 
 ## Need help?  See help(mxSummary)</code></pre>
@@ -2280,9 +2280,10 @@ A1</code></pre>
 ## BI  &quot;0*data.Female&quot; &quot;0*data.Female&quot; &quot;0*data.Female&quot; &quot;0&quot;             &quot;0&quot;
 ## BEH &quot;0&quot;             &quot;0&quot;             &quot;0*data.Female&quot; &quot;0*data.Female&quot; &quot;0&quot;</code></pre>
 <pre class="r"><code>## We may modify it if we only want to model the path from PBC to BEH
-A1_bi2beh &lt;- A1
-A1_bi2beh[4, ] &lt;- A1_bi2beh[5, 4] &lt;- &quot;0&quot;
-A1_bi2beh</code></pre>
+## Renamed A1_bi2beh to A1_pbc2beh for consistency
+A1_pbc2beh &lt;- A1
+A1_pbc2beh[4, ] &lt;- A1_pbc2beh[5, 4] &lt;- &quot;0&quot;
+A1_pbc2beh</code></pre>
 <pre><code>##     ATT SN  PBC             BI  BEH
 ## ATT &quot;0&quot; &quot;0&quot; &quot;0&quot;             &quot;0&quot; &quot;0&quot;
 ## SN  &quot;0&quot; &quot;0&quot; &quot;0&quot;             &quot;0&quot; &quot;0&quot;
@@ -2359,8 +2360,8 @@ summary(fit2)</code></pre>
 ## AIC:      -349.2425              -93.24253               -93.131435
 ## BIC:     -1105.9180               72.50542                -0.585202
 ## To get additional fit indices, see help(mxRefModels)
-## timestamp: 2023-02-24 08:45:54 
-## Wall clock time: 0.7869146 secs 
+## timestamp: 2023-02-24 19:24:56 
+## Wall clock time: 0.8062253 secs 
 ## optimizer:  SLSQP 
 ## OpenMx version number: 2.20.7 
 ## Need help?  See help(mxSummary)</code></pre>
